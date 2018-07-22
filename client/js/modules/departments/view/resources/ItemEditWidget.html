@@ -1,0 +1,34 @@
+<div data-dojo-attach-point="editFormContainer" class="asktu-department-edit-form-container">
+	<table>		
+		<tr>
+			<td>Короткое название</td>
+			<td>
+				<div data-dojo-attach-point="shortName" data-dojo-type="dijit/form/TextBox"></div>
+			</td>
+		</tr>
+		<tr>
+			<td>Полное название</td>
+			<td>
+				<div data-dojo-attach-point="fullName" data-dojo-type="dijit/form/Textarea"></div>
+			</td>
+		</tr>
+		<tr>
+			<td>Тип подразделения</td>
+			<td>
+				<div data-dojo-attach-point="levelSelect"
+					data-dojo-type="dijit/form/FilteringSelect"
+					data-dojo-props="store: this.levelStore, searchAttr: 'name', required: false">
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>Описание</td>
+			<td>
+				<div data-dojo-attach-point="description" data-dojo-type="dijit/form/Textarea"></div>
+			</td>
+		</tr>			
+	</table>
+	<div data-dojo-attach-point="saveButton" class="top-topic-list-button">Сохранить</div>
+	<div data-dojo-attach-point="deleteButton" class="top-topic-list-button">Удалить</div>
+	<div data-dojo-attach-point="cancelButton" class="top-topic-list-button">Отмена</div>
+</div>

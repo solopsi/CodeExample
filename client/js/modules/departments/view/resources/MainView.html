@@ -1,0 +1,21 @@
+<div class="asktu-department-view asktu-layout-two-panel">
+	<div data-dojo-type="dijit/layout/BorderContainer" 
+		data-dojo-attach-point="layoutBorderContainer"
+		class="asktu-layout-two-panel-border-container">
+		<div class="asktu-panel asktu-department-view-content"
+			data-dojo-attach-point="contentContainer"
+			data-dojo-type="dijit/layout/StackContainer"
+			data-dojo-props="region:'center', splitter:true">
+			<div data-dojo-attach-point ="emptyContent"
+				data-dojo-type="dijit/layout/ContentPane" class="empty-content"></div>
+		</div>
+		<div class="asktu-panel asktu-department-view-nav" 
+			data-dojo-attach-point="editContainer"
+			data-dojo-props="region:'right', splitter:true, minSize:400"
+			data-dojo-type="dijit/layout/StackContainer">		
+			<div data-dojo-attach-point ="emptyNav"
+				data-dojo-type="dijit/layout/ContentPane" class="empty-nav"></div>		 
+		</div>
+		<div class="float-barrier"></div>
+	</div>
+</div>
